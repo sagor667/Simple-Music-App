@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Music App</title>
+    <link rel="shortcut icon" href="musical-note.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <i class="fa-solid fa-angle-left"></i>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <img src="imgs/songlogo.jpg" alt="" id="songLogo">
+        <h2>The Music Lyrics Name</h2>
+        <h3>Music Author</h3>
+        <audio id="song" src="audios/Color_Out_-_Host.mp3"></audio>
+        <input type="range" name="audio" value="0" id="range">
+        <div class="controllers">
+            <i class="fa-solid fa-backward"></i>
+            <i onclick="playMusic()" class="fa-solid fa-play" id="playPause"></i>
+            <i class="fa-solid fa-forward"></i>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
